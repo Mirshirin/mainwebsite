@@ -1,0 +1,14 @@
+[
+    {
+        "id" : 1,
+        "name": "shirin",
+        "family" : "mir",
+        "email":"mir@yahoo.com"
+    },
+    {
+        "id" : 2,
+        "name": "aria",
+        "family" : "mirarva",
+        "email":"mirara@yahoo.com"
+    }
+]
