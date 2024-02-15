@@ -1,9 +1,17 @@
-<?php
-require('./function.php');
-// 
+<?php 
+    require('./function.php');   
+ 
+if(!isset($_GET['search'])) {
+    redirect('index.php');
+}
+
+$search = $_GET['search'];
 $setting = get_data('setting');
 $posts = get_data('post');
+$search_posts = get_word($posts, $search);
 $top_post_view=get_post_by_view($posts);
+
+
 ?>
 <html lang="en">
     <head>
@@ -11,19 +19,20 @@ $top_post_view=get_post_by_view($posts);
         <meta name="description" content="This is a gitmag website">
         <meta name="keyword" content="<?= $setting['keywords']?>">
         <meta name="author" content="<?= $setting['author']?>">
+
         <title><?= $setting['title']?></title>
         <link rel="stylesheet" href="<?= assts('css/style.css')?>">
     </head>
 
     <body>
         <main>
-            <?php require('./parts/header.php') ?>          
+            <?php require('./parts/header.php') ?> 
             <?php require('./parts/navbar.php') ?>
-            <section id="content">                
+            <section id="content">
             <?php require('./parts/asides.php') ?>
-
                 <div id="articles">
-                    <?php foreach($posts as $post):?>
+                    <?php if ($search_posts):?>
+                    <?php foreach( $search_posts as $post):?>
                     <article>
                         <div class="caption">
                             <h3><?=$post['title']?></h3>
@@ -41,7 +50,10 @@ $top_post_view=get_post_by_view($posts);
                         <div class="clearfix"></div>
                     </article>
                     <?php endforeach ?>
-                     
+                    <?php else :?>
+                        <strong>There is not output</strong>
+
+                    <?php  endif?>   
                 </div>
                 <div class="clearfix"></div>
             </section>

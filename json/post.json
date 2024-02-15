@@ -2,16 +2,34 @@
     {
         "id":1,
         "title":"This is a post1",
-        "content":"a book or other written or printed work, regarded in terms of its content rather than its physical form regarded in terms of its content rather than its physical form regarded in terms of its content rather than its physical form",
+        "content":"a book aria or other written or printed work, regarded in terms of its content rather than its physical form regarded in terms of its content rather than its physical form regarded in terms of its content rather than its physical form",
         "category":"book",
         "view":222
     },
     {
         "id":2,
-        "title":"This is a post2",
-        "content":"Enhance your text with our cutting-edge font style text effect generator! Create stunning and customizable fonts",
+        "title":"Enjancing sport2",
+        "content":"Enhance  aria your text with our cutting-edge font style text effect generator! Create stunning and customizable fonts",
         "category":"sport",
         "view":122
+
+    }
+    ,
+    {
+        "id":3,
+        "title":"Enjancing sport3",
+        "content":"Enhance  aria your text with our cutting-edge font style text effect generator! Create stunning and customizable fonts",
+        "category":"sport",
+        "view":322
+
+    } 
+    ,
+    {
+        "id":4,
+        "title":"Enjancing political",
+        "content":"The meaning of POLITICAL is of or relating to government, a government, or the conduct of government.",
+        "category":"political",
+        "view":15
 
     }
 ]
