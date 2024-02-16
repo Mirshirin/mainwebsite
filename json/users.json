@@ -1,14 +1,19 @@
 [
     {
         "id" : 1,
-        "name": "shirin",
-        "family" : "mir",
-        "email":"mir@yahoo.com"
+        "name": "Shirin",
+        "family" : "Mirshekari",
+        "email":"mir@yahoo.com",
+        "password":"1",
+        "date": "2021-05-05 15:00:00"
     },
     {
         "id" : 2,
-        "name": "aria",
-        "family" : "mirarva",
-        "email":"mirara@yahoo.com"
+        "name": "Aria",
+        "family" : "Arvand",
+        "email":"mirara@yahoo.com",
+        "password":"2",
+        "date": "2024-05-05 12:00:00"
+
     }
 ]

@@ -1,6 +1,5 @@
 <?php
 require('./function.php');
-// 
 $setting = get_data('setting');
 $posts = get_data('post');
 $top_post_view=get_post_by_view($posts);
@@ -28,8 +27,8 @@ $top_post_view=get_post_by_view($posts);
                         <div class="caption">
                             <h3><?=$post['title']?></h3>
                             <ul>
-                                <li>Date: <span>2020-05-15</span></li>
-                                <li>Views: <span>1526 view</span></li>
+                                <li>Date: <span><?=$post['date']?></span></li>
+                                <li>Views: <span><?=$post['view']?></span></li>
                             </ul>
                             <p><?= get_excerpt($post['content'])?>
                             </p>
